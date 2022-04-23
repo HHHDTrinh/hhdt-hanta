@@ -1,0 +1,24 @@
+@media screen and (max-width: 767px) {
+    .loader {
+      height: 8em;
+      width: 8em;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .loader {
+      height: 7em;
+      width: 7em;
+    }
+    .text-loading .letter-loading {font-size: 40px; letter-spacing: 10px;}
+}
+
+@media only screen and (max-width: 1200px){
+    .content__inner .content__text{
+        max-width: 100%;
+    }
+    
+    .content__inner .bee__img{
+        display: none;
+    }
+}
