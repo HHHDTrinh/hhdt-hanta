@@ -28,6 +28,14 @@ nav{
     max-width: 170px;
 }
 
+.nav__left .logo-white{
+    display: block;
+}
+
+.nav__left .logo-black{
+    display: none;
+}
+
 .nav__right .nav__socials,
 .nav__center-icon,
 .nav__center,

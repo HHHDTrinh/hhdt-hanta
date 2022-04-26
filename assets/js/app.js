@@ -130,7 +130,6 @@ mybutton.addEventListener('click', function(event){
 
 // Count number
 const counters = document.querySelectorAll('.count');
-console.log(counters)
 const speed = 600;
 
 counters.forEach((counter) => {
