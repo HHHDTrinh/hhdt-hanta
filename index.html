@@ -2,7 +2,6 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="refresh" content="0; url=https://hhhdtrinh.github.io/FizitechWork2-Hanta/pages/index.html">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="https://smartdemowp.com/hanta/wp-content/uploads/favicon.ico" sizes="32x32">
@@ -14,16 +13,221 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@700&family=Open+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css">
-    <link rel="stylesheet" href="../assets/css/grid.css">
-    <link rel="stylesheet" href="../assets/css/base.css">
-    <link rel="stylesheet" href="../assets/css/main.css">
-    <link rel="stylesheet" href="../assets/css/responsive.css">
+    <link rel="stylesheet" href="./assets/css/grid.css">
+    <link rel="stylesheet" href="./assets/css/base.css">
+    <link rel="stylesheet" href="./assets/css/preloader.css">
+    <link rel="stylesheet" href="./assets/css/navbar.css">
+    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
     <title>Hanta</title>
 </head>
 <body>
     <div id="main">
-        <div id="preloader"></div>
-        <div id="navbar-placeholder"></div>
+        <section class="preloader">
+            <div class="loader__container">
+                <div class="loader"></div>
+                <div class="text-loading">
+                    <span data-text-preloader="h" class="letter-loading">h</span>
+                    <span data-text-preloader="a" class="letter-loading">a</span>
+                    <span data-text-preloader="n" class="letter-loading">n</span>
+                    <span data-text-preloader="t" class="letter-loading">t</span>
+                    <span data-text-preloader="a" class="letter-loading">a</span>
+                </div>
+            </div>
+        </section>
+        <nav id="navbar">
+            <div class="large__container nav__container">
+                <div class="nav__left">
+                    <a class="logo-white" href="index.html">
+                        <img src="https://smartdemowp.com/hanta/wp-content/uploads/Group-1.svg" alt="" class="nav__left-img">
+                    </a>
+                    <a class="logo-black" href="index.html">
+                        <img src="https://smartdemowp.com/hanta/wp-content/themes/hanta/assets/images/logo-3.svg" alt="">
+                    </a>
+                </div>
+                <div class="nav__center">
+                    <ul class="nav__link">
+                        <li>
+                            <a href="index.html">home</a>
+                            <ul class="subnav">
+                                <li><a href="index.html">home page 01</a></li>
+                                <li><a href="./pages/homeSecond.html">home page 02</a></li>
+                                <li class="menu-with-icon">
+                                    <a href="index.html">header style</a>
+                                    <i class="ri-arrow-right-s-line"></i>
+                                    <ul class="subnav subnav-second">
+                                        <li><a href="index.html">header style one</a></li>
+                                        <li><a href="./pages/homeSecond.html">header style two</a></li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">pages</a>
+                            <ul class="subnav">
+                                <li><a href="./pages/about.html">about us</a></li>
+                                <li><a href="./pages/services.html">our services</a></li>
+                                <li><a href="./pages/details.html">service details</a></li>
+                                <li><a href="./pages/gallery.html">gallery</a></li>
+                                <li><a href="./pages/error.html">error page</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="">shop</a>
+                            <ul class="subnav">
+                                <li><a href="./pages/shop4c.html">shop four column</a></li>
+                                <li><a href="">shop with sidebar</a></li>
+                                <li><a href="./pages/shopdetails.html">shop details</a></li>
+                                <li><a href="./pages/cart.html">shopping cart</a></li>
+                                <li><a href="./pages/cart.html">check out</a></li>
+                            </ul>
+                        </li>
+                        <li>
+                            <a href="./pages/blog.html">blog</a>
+                            <ul class="subnav">
+                                <li><a href="./pages/blog.html">blog grid</a></li>
+                                <li><a href="">blog standard</a></li>
+                                <li><a href="">blog details</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="./pages/contact.html">contact us</a></li>
+                    </ul>
+                    <ul class="nav__center-icon">
+                        <li>
+                            <div class="search__show">
+                                <button class="search-btn" type="button">
+                                    <i class="ri-search-line"></i>
+                                </button>
+                                <div class="search__form">
+                                    <div class="form__container">
+                                        <form action="">
+                                            <div class="form__items">
+                                                <input type="search" name="" placeholder="Search..." required id="">
+                                                <button type="submit">
+                                                    <i class="ri-search-line"></i>
+                                                </button>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <a href="./pages/cart.html">
+                                <i class="ri-shopping-cart-2-line"></i>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="nav__right">
+                    <div class="nav__socials">
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-fill"></i></a>
+                        <a href="#">
+                            <svg class="gg-svg" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
+                        </a>
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-pinterest-line"></i></a>
+                    </div>
+                </div>
+            </div>
+            <!-- Scroll Down Navbar -->
+            <nav id="second__nav">
+                <div class="second-nav__container">
+                    <div class="nav__left">
+                        <a href="index.html">
+                            <img src="https://smartdemowp.com/hanta/wp-content/uploads/Group-1.svg" alt="" class="nav__left-img">
+                        </a>
+                    </div>
+                    <div class="nav__center">
+                        <ul class="nav__link">
+                            <li>
+                                <a href="index.html">home</a>
+                                <ul class="subnav">
+                                    <li><a href="index.html">home page 01</a></li>
+                                    <li><a href="./pages/homeSecond.html">home page 02</a></li>
+                                    <li class="menu-with-icon">
+                                        <a href="index.html">header style</a>
+                                        <i class="ri-arrow-right-s-line"></i>
+                                        <ul class="subnav subnav-second">
+                                            <li><a href="index.html">header style one</a></li>
+                                            <li><a href="./pages/homeSecond.html">header style two</a></li>
+                                        </ul>
+                                    </li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">pages</a>
+                                <ul class="subnav">
+                                    <li><a href="./pages/about.html">about us</a></li>
+                                    <li><a href="./pages/services.html">our services</a></li>
+                                    <li><a href="./pages/details.html">service details</a></li>
+                                    <li><a href="./pages/gallery.html">gallery</a></li>
+                                    <li><a href="./pages/error.html">error page</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="">shop</a>
+                                <ul class="subnav">
+                                    <li><a href="./pages/shop4c.html">shop four column</a></li>
+                                    <li><a href="">shop with sidebar</a></li>
+                                    <li><a href="./pages/shopdetails.html">shop details</a></li>
+                                    <li><a href="./pages/cart.html">shopping cart</a></li>
+                                    <li><a href="./pages/cart.html">check out</a></li>
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="./pages/blog.html">blog</a>
+                                <ul class="subnav">
+                                    <li><a href="./pages/blog.html">blog grid</a></li>
+                                    <li><a href="">blog standard</a></li>
+                                    <li><a href="">blog details</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="./pages/contact.html">contact us</a></li>
+                        </ul>
+                        <ul class="nav__center-icon">
+                            <li>
+                                <div class="search__show">
+                                    <button class="search-btn" type="button">
+                                        <i class="ri-search-line"></i>
+                                    </button>
+                                    <div class="search__form">
+                                        <div class="form__container">
+                                            <form action="">
+                                                <div class="form__items">
+                                                    <input type="search" name="" placeholder="Search..." required id="">
+                                                    <button type="submit">
+                                                        <i class="ri-search-line"></i>
+                                                    </button>
+                                                </div>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li>
+                                <a href="./pages/cart.html">
+                                    <i class="ri-shopping-cart-2-line"></i>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="nav__right">
+                        <div class="nav__socials">
+                            <a href="#"><i class="ri-facebook-fill"></i></a>
+                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                            <a href="#">
+                                <img src="./assets/img/nav-icon/google-plus-g-brands.svg" class="google-plus" alt="">
+                            </a>
+                            <a href="#"><i class="ri-instagram-line"></i></a>
+                            <a href="#"><i class="ri-pinterest-line"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </nav>
         <button id="topBtn" class="scroll-top">
             <span class="ri-arrow-up-s-line"></span>
         </button>
@@ -224,7 +428,7 @@
                                     <div class="col l-6 m-12 c-12">
                                         <div class="reason-product">
                                             <div class="img-wrapper">
-                                                <img class="section-product-img" src="../assets/img/reason/sunflower.png" alt="">
+                                                <img class="section-product-img" src="./assets/img/reason/sunflower.png" alt="">
                                             </div>
                                             <div class="reason-text">
                                                 <p class="reason-product-title">
@@ -237,7 +441,7 @@
                                         </div>
                                         <div class="reason-product">
                                             <div class="img-wrapper">
-                                                <img class="section-product-img" src="../assets/img/reason/bee-hive.png" alt="">
+                                                <img class="section-product-img" src="./assets/img/reason/bee-hive.png" alt="">
                                             </div>
                                             <div class="reason-text">
                                                 <p class="reason-product-title">
@@ -250,7 +454,7 @@
                                         </div>
                                         <div class="reason-product">
                                             <div class="img-wrapper">
-                                                <img class="section-product-img" src="../assets/img/reason/honeycomb.png" alt="">
+                                                <img class="section-product-img" src="./assets/img/reason/honeycomb.png" alt="">
                                             </div>
                                             <div class="reason-text">
                                                 <p class="reason-product-title">
@@ -265,7 +469,7 @@
                                     <div class="col l-6 m-12 c-12">
                                         <div class="reason-product">
                                             <div class="img-wrapper">
-                                                <img class="section-product-img" src="../assets/img/reason/bee.png" alt="">
+                                                <img class="section-product-img" src="./assets/img/reason/bee.png" alt="">
                                             </div>
                                             <div class="reason-text">
                                                 <p class="reason-product-title">
@@ -278,7 +482,7 @@
                                         </div>
                                         <div class="reason-product">
                                             <div class="img-wrapper">
-                                                <img class="section-product-img" src="../assets/img/reason/bee-hive.png" alt="">
+                                                <img class="section-product-img" src="./assets/img/reason/bee-hive.png" alt="">
                                             </div>
                                             <div class="reason-text">
                                                 <p class="reason-product-title">
@@ -291,7 +495,7 @@
                                         </div>
                                         <div class="reason-product">
                                             <div class="img-wrapper">
-                                                <img class="section-product-img" src="../assets/img/reason/honey.png" alt="">
+                                                <img class="section-product-img" src="./assets/img/reason/honey.png" alt="">
                                             </div>
                                             <div class="reason-text">
                                                 <p class="reason-product-title">
@@ -667,7 +871,94 @@
             </div>
         </div>
         <slider-logos></slider-logos>
-        <footer id="footer"></footer>
+        <footer>
+            <div class="foot-link">
+                <div class="foot-layer">
+                    <div class="grid wide">
+                        <div class="row">
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-content">
+                                    <h4 class="footer-title">quick links</h4>
+                                    <div class="footer-direct">
+                                        <a href="">about us</a>
+                                        <a href="">last news & blog</a>
+                                        <a href="">our services</a>
+                                        <a href="">Honeycomb</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-content">
+                                    <h4 class="footer-title">company</h4>
+                                    <div class="footer-direct">
+                                        <a href="">about company</a>
+                                        <a href="">our gallery</a>
+                                        <a href="">contact us</a>
+                                        <a href="">natural honey</a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-content foot-contact" style="margin-right: 70px;">
+                                    <h4 class="footer-title">contact us</h4>
+                                    <div class="footer-direct">
+                                        <p>Don’t Hesite To Conatct With Us Feel Free When You Talk With Us</p>
+                                        <div class="footer-direct-ic">
+                                            <a href="#"><i class="ri-facebook-fill"></i></a>
+                                            <a href="#"><i class="ri-twitter-fill"></i></a>
+                                            <a href="#">
+                                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 640 512"><!--! Font Awesome Pro 6.1.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. --><path d="M386.061 228.496c1.834 9.692 3.143 19.384 3.143 31.956C389.204 370.205 315.599 448 204.8 448c-106.084 0-192-85.915-192-192s85.916-192 192-192c51.864 0 95.083 18.859 128.611 50.292l-52.126 50.03c-14.145-13.621-39.028-29.599-76.485-29.599-65.484 0-118.92 54.221-118.92 121.277 0 67.056 53.436 121.277 118.92 121.277 75.961 0 104.513-54.745 108.965-82.773H204.8v-66.009h181.261zm185.406 6.437V179.2h-56.001v55.733h-55.733v56.001h55.733v55.733h56.001v-55.733H627.2v-56.001h-55.733z"/></svg>
+                                            </a>
+                                            <a href="#"><i class="ri-instagram-line"></i></a>
+                                            <a href="#"><i class="ri-pinterest-line"></i></a>
+                                        </div>
+                                        <span>
+                                            <i style="font-size: 15px; color: var(--main-color); margin-right: 8px;" class="ri-phone-line"></i>
+                                            <a style="margin: 0 !important;" href="tel:+012 (345) 6789">+012 (345) 6789</a>
+                                        </span>
+                                    </div>
+                                </div>
+                            </div>  
+                            <div class="col l-3 m-12 c-12">
+                                <div class="footer-content" style="margin-left: -30px;">
+                                    <h4 class="footer-title">recent news</h4>
+                                    <div class="img-content">
+                                        <figure class="img-box">
+                                            <img src="https://smartdemowp.com/hanta/wp-content/uploads/hanta_blog_05-90x80.jpg" alt="">
+                                        </figure>
+                                        <div class="img-text">
+                                            <p class="section-detail"><a href="#">Amazing Health Benefits Of Vinegar And Honey</a></p>
+                                            <p style="cursor: default; color: #5b5858 !important;" class="section-detail">28 OCT 2020</p>
+                                        </div>
+                                    </div>
+                                    <div class="img-content">
+                                        <figure class="img-box">
+                                            <img src="https://smartdemowp.com/hanta/wp-content/uploads/hanta_blog_04-90x80.jpg" alt="">
+                                        </figure>
+                                        <div class="img-text">
+                                            <p class="section-detail"><a href="#">Tutorial Beekeeping For Beginners Breeding Be</a></p>
+                                            <p style="cursor: default; color: #5b5858 !important;" class="section-detail">28 OCT 2020</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="foot-policy">
+                            <div class="policy-detail">
+                                <span class="section-detail">2021</span>
+                                <a href="#">Hanta</a>
+                                <span class="section-detail">. all rights reserved</span>
+                            </div>
+                            <div class="policy-contact">
+                                <span class="section-detail">
+                                    Call Us: +012 (345) 6789
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </div>
     <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
     <script
@@ -676,6 +967,6 @@
         crossorigin="anonymous">
     </script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
-    <script src="../assets/js/app.js"></script>
+    <script src="./assets/js/app.js"></script>
 </body>
 </html>

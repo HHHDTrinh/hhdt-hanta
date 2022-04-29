@@ -1,0 +1,147 @@
+/* Common */
+.section-heading{
+    color: var(--main-color-two) !important;
+}
+
+#second__nav .nav__link .subnav{
+    top: 100% !important;
+}
+
+#navbar .nav__container li a,
+#navbar .nav__container i{
+    color: var(--black-color);
+}
+
+.nav__link > li{
+    padding-top: 31px !important;
+    padding-bottom: 31px !important;
+}
+
+.gg-svg{
+    fill: var(--black-color) !important;
+}
+
+.nav__left .logo-white{
+    display: none !important;
+}
+
+.nav__left .logo-black{
+    display: block !important;
+}
+
+/* Main */
+.contact{
+    padding: 125px 0px 130px 0px;
+    position: relative;
+}
+
+.contact::before{
+    content: "";
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background: #ca97440f;
+    width: 85%;
+    height: 100%;
+}
+
+.contact .contact-info{
+    margin-right: 10px;
+    margin-top: 10%;
+}
+
+.contact .contact-info p{
+    margin-bottom: 11px;
+}
+
+.contact .contact-info h2{
+    margin-bottom: 45px;
+}
+
+.contact .contact-info span{
+    margin-bottom: 28px;
+}
+
+.contact-info .icon a{
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    color: #5b5858;
+    width: 45px;
+    height: 45px;
+    line-height: 40px;
+    border: 3px solid #e2e2e2;
+    border-radius: 50%;
+    text-align: center;
+    margin-right: 10px;
+    transform-origin: all 300ms ease;
+}
+
+.contact-info .icon a:hover{
+    background: var(--main-color-two);
+    border-color: var(--main-color-two);
+    color: var(--white-color);
+}
+
+.contact-info .icon .gg-svg{
+    fill: #5b5858 !important;
+}
+
+.contact-info .icon a:hover .gg-svg{
+    fill: var(--white-color) !important;
+}
+
+.ic-box svg{
+    position: absolute;
+    fill: #ca974429;
+    width: 200px;
+}
+
+.ic-box svg.svg-1{
+    top: 10%;
+    left: -5%;
+    transform: rotate(-45deg);
+}
+
+.ic-box svg.svg-2{
+    transform: rotate(0deg);
+    bottom: 30px;
+    right: -3%;
+}
+
+input, textarea{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border: 1px solid #dbdbdb;
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b5858;
+    padding: 10px 20px;
+    transition: all 500ms ease;
+    margin-bottom: 32px;
+}
+
+textarea{
+    resize: none;
+    height: 150px;
+    display: block;
+}
+
+textarea:focus,
+input:focus{
+    border-color: var(--main-color-two);
+}
+
+::placeholder{
+    font-size: 15px;
+    font-weight: 600;
+    color: #5b5858;
+}
+
+.map{
+    position: relative;
+    display: block;
+    width: 100%;
+}

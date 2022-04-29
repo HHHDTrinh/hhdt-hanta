@@ -74,6 +74,7 @@ $(window).on('load', function(){
 function removeLoader(){
   $("#preloader").fadeOut(500);
   // $(window).scrollTop(0);
+  $(".preloader").fadeOut(500);
 }
 
 // Slider Header Background
@@ -228,3 +229,22 @@ function TabsAbout(){
 };
 
 TabsAbout();
+
+
+// menuModal - Honey & Sweets Pages
+// function menuModal(){
+//   const Show = document.querySelector('.nice-select-js')
+
+//   function OpenModal(){
+//     Show.classList.add('open')
+//   }
+
+//   function CloseModal(){
+//     Show.classList.remove('open')
+//   }
+
+
+//   Show.addEventListener('click', OpenModal)
+// }
+
+// menuModal();
