@@ -195,3 +195,25 @@
     width: 76px;
     height: 76px;
 }
+
+/* Mobile */
+@media screen and (max-width: 46.1875em) {
+    .cta{
+        padding-top: 70px;
+    }
+
+    .cta .btn-pag .pagination li a,
+    .cta .btn-pag .pagination li span{
+        width: 30px;
+        height: 30px;
+        line-height: 30px;
+    }
+
+    .cta .btn-pag .pagination li a:before,
+    .cta .btn-pag .pagination li span:before{
+        width: 40px;
+        height: 40px;
+        top: -7px;
+        left: -7px;
+    }
+}

@@ -159,3 +159,19 @@
     padding: 15px 36px;
     text-transform: capitalize;
 }
+
+/* Responsive */
+/* Tablet, Mobile */
+@media screen and (max-width: 63.9375em) {
+    .details{
+        padding-bottom: 0;
+    }
+
+    .tab-content{
+        margin-bottom: 0;
+    }
+
+    .tab-content .tab-pane .img-box{
+        text-align: center;
+    }
+}

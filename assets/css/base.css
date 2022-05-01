@@ -181,7 +181,7 @@ img{
 }
 
 .circle-btns .btn:hover{
-  background-color: var(--main-color);
+  background-color: var(--main-color) !important;
   color: var(--white-color);
 }
 
@@ -197,8 +197,8 @@ img{
 .section-name{
   color: var(--black-color);
   text-transform: uppercase;
-  line-height: 50px;
-  font-size: clamp(3rem, 3.3vw, 5rem);
+  line-height: clamp(4rem, 5.5vw, 5rem);
+  font-size: clamp(3.4rem, 5.5vw, 5rem);
   font-weight: 700;
   margin: 0px;
   font-family: 'open-sans-condensed';

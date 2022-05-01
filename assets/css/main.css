@@ -28,7 +28,7 @@ header .content__inner{
 .content__inner .content__text h1{
     margin: 0;
     color: var(--white-color);
-    font-size: 10rem;
+    font-size: clamp(6.4rem, 5.5vw, 10rem);
     line-height: 105px;
     margin-bottom: 35px;
     font-family: 'open-sans-condensed';
@@ -253,7 +253,7 @@ header .content__inner{
     background-size: cover;
     background-repeat: no-repeat;
     background-position: top center;
-    max-width: auto;
+    max-width: 100%;
 }
 
 .container .product-box{
@@ -733,10 +733,11 @@ header .content__inner{
     font-weight: 600;
     color: var(--white-color) !important;
     margin-bottom: 15px;
+    text-transform: uppercase;
 }
 
 .container .cta-heading > p{
-    font-size: clamp(3rem, 3.3vw, 5rem);
+    font-size: clamp(4rem, 5.5vw, 5rem);
     line-height: 50px;
     margin-bottom: 34px;
     color: var(--white-color) !important;

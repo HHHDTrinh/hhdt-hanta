@@ -104,7 +104,7 @@ function changeBc(){
 
 // Scroll down fade nav & btn
 window.addEventListener('scroll', function(){
-  document.getElementById("second__nav").style.top = 0 + "px";
+  document.getElementById("second__nav").style.top = "0px";
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
       document.getElementById("second__nav").style.background = "#cb9744";
       document.getElementById("second__nav").style.opacity = "1";
@@ -160,14 +160,14 @@ $(document).ready(function(){
       dots: false,
       pauseOnHover: false,
       responsive: [{
-          breakpoint: 768,
-          settings: {
-              slidesToShow: 4
-          }
-      }, {
-          breakpoint: 520,
+          breakpoint: 1023,
           settings: {
               slidesToShow: 3
+          }
+      }, {
+          breakpoint: 739,
+          settings: {
+              slidesToShow: 1
           }
       }]
   });
@@ -186,6 +186,20 @@ $(document).ready(function(){
       nextArrow: $('.think-btn--next'),
       pauseOnHover: false,
       dots: true,
+      responsive: [{
+        breakpoint: 1023,
+        settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2
+        }
+    }, {
+        breakpoint: 739,
+        settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+            dots: false
+        }
+    }]
   });
 });
 
@@ -202,6 +216,18 @@ $(document).ready(function(){
     nextArrow: $('.think-btn--next'),
     pauseOnHover: false,
     dots: true,
+    responsive: [{
+      breakpoint: 1023,
+      settings: {
+          slidesToShow: 1
+      }
+  }, {
+      breakpoint: 739,
+      settings: {
+          slidesToShow: 1,
+          dots: false
+      }
+  }]
   });
 });
 
