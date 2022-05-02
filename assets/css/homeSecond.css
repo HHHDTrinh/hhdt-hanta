@@ -1432,3 +1432,9 @@ slider-logos .foot-logos .slide img:hover{
         margin-top: 12px;
     }
 }
+
+@media screen and (min-width: 484px) and (max-width: 740px){
+    header .content__inner{
+        margin-left: 85px;
+    }
+}

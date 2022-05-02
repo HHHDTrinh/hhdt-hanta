@@ -285,3 +285,56 @@ select {
     color: #616161;
     text-decoration: line-through;
 }
+
+.shop-list{
+    margin-top: 80px;
+}
+
+/* Responsive */
+/* Table, Mobile */
+@media screen and (max-width: 63.9375em) {
+    .shop-sidebar{
+        margin-bottom: 30px;
+    }
+
+    .shop-list{
+        margin-top: 150px;
+    }
+}
+
+/* Mobile */
+@media screen and (max-width: 46.1875em) {
+    .productSec{
+        padding: 70px 0px 80px 0px;
+    }
+
+    .productSec .item-shorting{
+        padding-top: 25px;
+    }
+
+    .item-shorting .text{
+        float: none;
+        display: block;
+    }
+
+    .item-shorting .short-box{
+        float: none;
+        display: inline-block;
+    }
+
+    .item-shorting .short-box .nice-select{
+        height: 50px;
+        padding: 0px 10px;
+        padding-left: 0px;
+        margin-top: 15px;
+    }
+
+    .productSec .item-shorting .text p{
+        line-height: 26px;
+    }
+
+    .productSec .product-content{
+        max-width: 300px;
+        margin: 0 auto;
+    }
+}

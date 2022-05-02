@@ -145,3 +145,15 @@ input:focus{
     display: block;
     width: 100%;
 }
+
+/* Table, Mobile */
+@media screen and (max-width: 63.9375em) {
+    .contact .contact-info{
+        margin-right: 0px;
+        margin-bottom: 30px;
+    }
+
+    .ic-box{
+        display: none;
+    }
+}
