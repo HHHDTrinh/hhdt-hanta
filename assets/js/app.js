@@ -583,20 +583,20 @@ TabsAbout();
 
 
 // menuModal - Honey & Sweets Pages
-function menuModal(){
-  const Show = document.querySelector('.nice-select-js')
+// function menuModal(){
+//   const Show = document.querySelector('.nice-select-js')
 
-  function OpenModal(){
-    Show.classList.add('open')
-  }
+//   function OpenModal(){
+//     Show.classList.add('open')
+//   }
 
-  function CloseModal(){
-    Show.classList.remove('open')
-  }
+//   function CloseModal(){
+//     Show.classList.remove('open')
+//   }
 
 
-  Show.addEventListener('click', OpenModal)
-}
+//   Show.addEventListener('click', OpenModal)
+// }
 
 // menuModal();
 
@@ -623,3 +623,23 @@ function MenuMobile(){
 }
 
 MenuMobile();
+
+// Submenu mobile
+function subMobile(){
+    var  dropBtns = document.querySelectorAll('.dropdown-btn-js');
+    dropBtns.forEach(item =>{
+        item.addEventListener('click', function(){
+            item.classList.toggle('open');
+        })
+    })
+}
+
+subMobile();
+
+$(document).ready(function(){
+    $('.dropdown-btn-js').on("click", function(e){
+      $(this).prev('ul').toggle('open');
+      e.stopPropagation();
+      e.preventDefault();
+    });
+});
