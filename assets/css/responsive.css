@@ -413,6 +413,18 @@
 
 /* Mobile */
 @media screen and (max-width: 46.1875em) {
+    .container .features-content{
+        padding-top: 225px;
+    }
+
+    .btn-link{
+        padding: 12px 30px !important;
+    }
+    
+    .aboutSec__tabs-box .tab-item{
+        margin-right: 0 !important;
+    }
+
     .aboutSec{
         padding-bottom: 70px;
     }

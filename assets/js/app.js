@@ -74,7 +74,7 @@ class navbarInner extends HTMLElement{
                             <a href="../index.html">home</a>
                             <ul class="subnav">
                                 <li><a href="../index.html">home page 01</a></li>
-                                <li><a href="../pages/">home page 02</a></li>
+                                <li><a href="../pages/homeSecond.html">home page 02</a></li>
                                 <li class="menu-with-icon">
                                     <a href="../index.html">header style</a>
                                     <i class="ri-arrow-right-s-line"></i>
@@ -86,7 +86,7 @@ class navbarInner extends HTMLElement{
                             </ul>
                         </li>
                         <li>
-                            <a href="">pages</a>
+                            <a href="../pages/about.html">pages</a>
                             <ul class="subnav">
                                 <li><a href="../pages/about.html">about us</a></li>
                                 <li><a href="../pages/services.html">our services</a></li>
@@ -96,7 +96,7 @@ class navbarInner extends HTMLElement{
                             </ul>
                         </li>
                         <li>
-                            <a href="">shop</a>
+                            <a href="../pages/shop4c.html">shop</a>
                             <ul class="subnav">
                                 <li><a href="../pages/shop4c.html">shop four column</a></li>
                                 <li><a href="">shop with sidebar</a></li>
@@ -171,7 +171,7 @@ class navbarInner extends HTMLElement{
                                 <a href="../index.html">home</a>
                                 <ul class="subnav">
                                     <li><a href="../index.html">home page 01</a></li>
-                                    <li><a href="../pages/">home page 02</a></li>
+                                    <li><a href="../pages/homeSecond.html">home page 02</a></li>
                                     <li class="menu-with-icon">
                                         <a href="../index.html">header style</a>
                                         <i class="ri-arrow-right-s-line"></i>
@@ -183,7 +183,7 @@ class navbarInner extends HTMLElement{
                                 </ul>
                             </li>
                             <li>
-                                <a href="">pages</a>
+                                <a href="../pages/about.html">pages</a>
                                 <ul class="subnav">
                                     <li><a href="../pages/about.html">about us</a></li>
                                     <li><a href="../pages/services.html">our services</a></li>
@@ -193,7 +193,7 @@ class navbarInner extends HTMLElement{
                                 </ul>
                             </li>
                             <li>
-                                <a href="">shop</a>
+                                <a href="../pages/shop4c.html">shop</a>
                                 <ul class="subnav">
                                     <li><a href="../pages/shop4c.html">shop four column</a></li>
                                     <li><a href="">shop with sidebar</a></li>
