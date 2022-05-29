@@ -154,10 +154,11 @@
 .product-details {
     position: relative;
     margin-left: 70px;
+    width: 100%;
 }
 
 .product-details .product_title{
-    font-size: 45px;
+    font-size: clamp(3.8rem, 5.5vw, 4.5rem);
     line-height: 50px;
     font-weight: 700;
     text-transform: uppercase;
@@ -228,6 +229,7 @@
     margin-bottom: 0px;
     text-transform: uppercase;
     color: var(--main-color);
+    text-decoration: underline;
 }
 
 .price .origin-price{
@@ -467,4 +469,60 @@
     background-color: transparent;
     font-size: 16px;
     font-family: 'Open Sans', sans-serif;
+}
+
+
+/* Mobile */
+@media screen and (max-width: 46.1875em) {
+    .page-nav a,
+    .page-nav{
+        display: inline-block !important;
+    }
+
+    .page-nav i{
+        top: 10px !important;
+    }
+
+    .product-details{
+        margin-left: 0 !important;
+    }
+    
+    .rate-comment{
+        flex-direction: column;
+        align-items: initial !important;
+    }
+
+    .rating{
+        width: 100%;
+    }
+
+    .review__text{
+        flex-direction: column;
+    }
+
+    .comment-respond,
+    .content__text{
+        padding-left: 0 !important;
+        width: 100%;
+    }
+
+    .comment-respond .comment-reply-title{
+        margin: 12px 0 6px;
+    }
+}
+
+@media only screen and (max-width: 767px){
+    .detailsReview{
+        padding: 70px 0;
+    }
+
+    .productDetails .product .product-content {
+        max-width: 300px;
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .detailsReview .big{
+        margin-bottom: 30px;
+    }
 }
