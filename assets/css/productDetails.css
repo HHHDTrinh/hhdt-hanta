@@ -1,0 +1,470 @@
+/* Common */
+.btn-link:hover {
+    text-decoration: none !important;
+}
+
+.btn-link--primary-second{
+    padding: 8px 32px !important;
+    font-size: 14px;
+    border: 1px solid #ca9744;
+}
+
+.quantity{
+    display: flex;
+    align-items: center;
+}
+
+.counter {
+    max-width: 130px;
+    width: 100%;
+    float: left;
+    margin-right: 10px;
+    padding: 2px 0;
+    border: 1px solid #dddddd;
+    z-index: 1;
+    margin-top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.counter span,
+.counter input {
+    line-height: 38px;
+    height: 38px;
+    width: 43px !important;
+    padding: 0px !important;
+    box-shadow: none !important;
+    font-family: 'Open Sans', sans-serif;
+    border: none;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    color: #112433;
+    border-left: 1px solid #dddddd;
+    border-right: 1px solid #dddddd;
+}
+
+.counter span{
+    font-size: 2.2rem;
+    color: #5b5858;
+}
+
+
+
+.section-heading{
+    color: var(--main-color-two) !important;
+}
+
+#second__nav .nav__link .subnav{
+    top: 100% !important;
+}
+
+#navbar .nav__container li a,
+#navbar .nav__container i{
+    color: var(--black-color);
+}
+
+.nav__link > li{
+    padding-top: 31px !important;
+    padding-bottom: 31px !important;
+}
+
+.gg-svg{
+    fill: var(--black-color) !important;
+}
+
+.nav__left .logo-white{
+    display: none !important;
+}
+
+.nav__left .logo-black{
+    display: block !important;
+}
+
+.slider-logo{
+    padding: 130px 0 !important;
+}
+
+.border-line{
+    border-style: solid;
+    border-width: 0px 0px 1px 0px;
+    border-color: #00000017;
+    transition: background 0.3s, border 0.3s, border-radius 0.3s, box-shadow 0.3s;
+}
+
+/* Main */
+.detailsReview{
+    position: relative;
+    padding: 130px 0px 125px 0px;
+}
+
+.detailsReview .big{
+    position: relative;
+    display: block;
+}
+
+.detailsReview .big img{
+    width: 100%;
+}
+
+.detailsReview .big .search{
+    position: absolute;
+    top: 0.5em;
+    right: 0.5em;
+    font-size: 2em;
+    z-index: 9;
+    width: 36px;
+    height: 36px;
+    background: #fff;
+    text-indent: -9999px;
+    border-radius: 100%;
+    box-sizing: content-box;
+}
+
+.detailsReview .big .search::before{
+    content: "";
+    display: block;
+    width: 10px;
+    height: 10px;
+    border: 2px solid #000;
+    border-radius: 100%;
+    position: absolute;
+    top: 9px;
+    left: 9px;
+    box-sizing: content-box;
+}
+
+.detailsReview .big .search::after{
+    content: "";
+    display: block;
+    width: 2px;
+    height: 8px;
+    background: #000;
+    border-radius: 6px;
+    position: absolute;
+    top: 19px;
+    left: 22px;
+    -webkit-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+    box-sizing: content-box;
+}
+
+.product-details {
+    position: relative;
+    margin-left: 70px;
+}
+
+.product-details .product_title{
+    font-size: 45px;
+    line-height: 50px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 9px;
+    clear: none;
+    margin-top: 0;
+    padding: 0;
+}
+
+.product-details .rate-comment{
+    display: flex;
+    align-items: center;
+    margin-bottom: 9px;
+}
+
+.rating{
+    width: 30%;
+}
+
+.count-review{
+    flex: 1;
+}
+
+.count-review a{
+    color: #222;
+    font-size: 15px;
+    line-height: 28px;
+    font-weight: 400;
+    font-family: 'Open Sans', sans-serif
+}
+
+.text p{
+    font-size: 15px;
+    line-height: 30px;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    color: #5b5858;
+    font-weight: 400;
+    margin: 0;
+}
+
+.product_meta {
+    margin-bottom: 30px;
+}
+
+.product_meta>span {
+    display: block;
+    color: #131313;
+    font-size: 15px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    font-family: 'Open Sans', sans-serif;
+    margin: 8px 0;
+}
+
+.product_meta>span .sku,
+.product_meta .posted_in a {
+    color: #b73604;
+    font-size: 15px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.price span{
+    font-size: 24px;
+    line-height: 32px;
+    font-weight: 700;
+    margin-bottom: 0px;
+    text-transform: uppercase;
+    color: var(--main-color);
+}
+
+.price .origin-price{
+    text-decoration: line-through;
+    opacity: .6;
+}
+
+.product{
+    position: relative;
+    padding-top: 100px;
+}
+
+.productDetails .product-box .col:hover .product-img{
+    transform: scale(1.1);
+}
+
+.productDetails .product-box .section-name{
+    margin-bottom: 50px;
+}
+
+.productDetails .product .product-content{
+    background-color: var(--white-color);
+}
+
+.productDetails .product figure{
+    margin: 0;
+    object-fit: cover;
+    max-width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.productDetails .product .product-img{
+    width: 100%;
+    max-width: 100%;
+    transition: all 500ms ease 0s;
+}
+
+.productDetails .product .product__text{
+    padding: 20px 0 15px;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+.productDetails .product .product__text h3{
+    font-size: 1.8rem;
+    line-height: 26px;
+    text-transform: uppercase;
+    margin-bottom: 3px;
+    transition: all 500ms ease;
+    font-family: 'open-sans-condensed';
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.productDetails .product .product__text h3:hover{
+    color: var(--main-color-two);
+}
+
+.productDetails .product__text .origin-price{
+    color: var(--main-color-two);
+    font-size: 15px;
+    line-height: 26px;
+    font-weight: 700;
+}
+
+.desview{
+    display: block;
+    width: 100%;
+    padding: 0 15px;
+    margin-top: 80px;
+}
+
+.tabs {
+    display: flex;
+    position: relative;
+    border-bottom: 2px solid #ebebeb;
+}
+
+.tab-item{
+    position: relative;
+    display: inline-block;
+    margin-right: 35px;
+    padding-bottom: 16px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    justify-content: space-between;
+}
+
+.tab-item h5{
+    font-size: 1.8rem;
+    line-height: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.tab-item::after{
+    position: absolute;
+    content: '';
+    width: 0%;
+    height: 4px;
+    left: 0px;
+    bottom: -3px;
+    transition: all 500ms ease;
+    background: var(--main-color-two);
+}
+
+.tab-item:hover:after{
+    width: 100%;
+}
+
+.tab-icon {
+    font-size: 2.4rem;
+    width: 32px;
+    position: relative;
+}
+
+.tab-item.active {
+    opacity: 1;
+}
+
+.tab-item.active h5{
+    color: var(--main-color-two);
+}
+
+.tab-item.active::after{
+    width: 100%;
+}
+
+.tab-content {
+    padding-top: 30px;
+}
+
+.tab-pane {
+    color: #333;
+    display: none;
+}
+
+.tab-pane.active {
+    display: block;
+}
+
+.tab-pane-text{
+    display: flex;
+    position: relative;
+    min-height: 100px;
+}
+
+.tab-pane-text p{
+    font-size: 15px;
+    line-height: 28px;
+    color: #5b5858;
+    margin-bottom: 27px;
+}
+
+.tab-pane-text p:last-child{
+    margin-bottom: 0 !important;
+}
+
+.tab-pane-text img{
+    border-radius: 100%;
+    width: 100px;
+    height: 100px;
+}
+
+.rating i{
+    height: 2rem;
+    font-size: 2.6rem;
+    color: var(--main-color-two);
+    margin: 0 -3px;
+}
+
+.content__text{
+    position: relative;
+    padding-left: 30px;
+    width: 470px;
+}
+
+.review__text{
+    display: flex;
+}
+
+.review__text h5{
+    position: relative;
+    display: block;
+    font-size: 18px;
+    line-height: 28px;
+    font-weight: 900;
+    margin-bottom: 12px;
+}
+
+.review__text h5 a{
+    color: #131313;
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.review__text h5 span{
+    font-size: 15px;
+    font-weight: 600;
+    color: #93959e;
+}
+
+.review__text p{
+    line-height: 28px;
+    color: #93959e;
+}
+
+.comment-respond{
+    position: relative;
+    padding-left: 60px;
+}
+
+.comment-respond .comment-reply-title{
+    margin: 0;
+    position: relative;
+    display: block;
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+    margin-bottom: 24px;
+}
+
+.must-log-in{
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+    width: 100%;
+    display: block;
+    color:#878687;
+    margin-top: 8px;
+}
+
+.must-log-in a{
+    color: #007bff;
+    text-decoration: none;
+    background-color: transparent;
+    font-size: 16px;
+    font-family: 'Open Sans', sans-serif;
+}
