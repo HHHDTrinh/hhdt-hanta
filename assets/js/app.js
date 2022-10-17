@@ -86,7 +86,7 @@ class navbarInner extends HTMLElement{
                             </ul>
                         </li>
                         <li>
-                            <a href="../pages/about.html">pages</a>
+                            <a href="#">pages</a>
                             <ul class="subnav">
                                 <li><a href="../pages/about.html">about us</a></li>
                                 <li><a href="../pages/services.html">our services</a></li>
@@ -96,17 +96,17 @@ class navbarInner extends HTMLElement{
                             </ul>
                         </li>
                         <li>
-                            <a href="../pages/shop4c.html">shop</a>
+                            <a href="#">shop</a>
                             <ul class="subnav">
                                 <li><a href="../pages/shop4c.html">shop four column</a></li>
-                                <li><a href="">shop with sidebar</a></li>
-                                <li><a href="../pages/shopdetails.html">shop details</a></li>
+                                <li><a href="../pages/error.html">shop with sidebar</a></li>
+                                <li><a href="../pages/error.html">shop details</a></li>
                                 <li><a href="../pages/cart.html">shopping cart</a></li>
                                 <li><a href="../pages/cart.html">check out</a></li>
                             </ul>
                         </li>
                         <li>
-                            <a href="../pages/blog.html">blog</a>
+                            <a href="#">blog</a>
                             <ul class="subnav">
                                 <li><a href="../pages/blog.html">blog grid</a></li>
                                 <li><a href="">blog standard</a></li>
@@ -183,7 +183,7 @@ class navbarInner extends HTMLElement{
                                 </ul>
                             </li>
                             <li>
-                                <a href="../pages/about.html">pages</a>
+                                <a href="#">pages</a>
                                 <ul class="subnav">
                                     <li><a href="../pages/about.html">about us</a></li>
                                     <li><a href="../pages/services.html">our services</a></li>
@@ -193,17 +193,17 @@ class navbarInner extends HTMLElement{
                                 </ul>
                             </li>
                             <li>
-                                <a href="../pages/shop4c.html">shop</a>
+                                <a href="#">shop</a>
                                 <ul class="subnav">
                                     <li><a href="../pages/shop4c.html">shop four column</a></li>
-                                    <li><a href="">shop with sidebar</a></li>
-                                    <li><a href="../pages/shopdetails.html">shop details</a></li>
+                                    <li><a href="../pages/error.html">shop with sidebar</a></li>
+                                    <li><a href="../pages/error.html">shop details</a></li>
                                     <li><a href="../pages/cart.html">shopping cart</a></li>
                                     <li><a href="../pages/cart.html">check out</a></li>
                                 </ul>
                             </li>
                             <li>
-                                <a href="../pages/blog.html">blog</a>
+                                <a href="#">blog</a>
                                 <ul class="subnav">
                                     <li><a href="../pages/blog.html">blog grid</a></li>
                                     <li><a href="">blog standard</a></li>
@@ -297,7 +297,7 @@ class navbarInner extends HTMLElement{
                                         </div>
                                     </li>
                                     <li class="primary-menu-item menu-item-has-children">
-                                        <a href="../pages/about.html">pages</a>
+                                        <a href="#">pages</a>
                                         <ul class="sub-menu sub-menu-js">
                                             <li>
                                                 <a href="../pages/about.html">about us</a>
@@ -320,7 +320,7 @@ class navbarInner extends HTMLElement{
                                         </div>
                                     </li>
                                     <li class="primary-menu-item menu-item-has-children">
-                                        <a href="../pages/shop4c.html">shop</a>
+                                        <a href="#">shop</a>
                                         <ul class="sub-menu sub-menu-js">
                                             <li>
                                                 <a href="../pages/shop4c.html">shop four column</a>
@@ -337,7 +337,7 @@ class navbarInner extends HTMLElement{
                                         </div>
                                     </li>
                                     <li class="primary-menu-item menu-item-has-children menu-item-has-children-js">
-                                        <a href="../pages/blog.html">blog</a>
+                                        <a href="#">blog</a>
                                         <ul class="sub-menu sub-menu-js">
                                             <li>
                                                 <a href="../pages/blog.html">blog grid</a>
