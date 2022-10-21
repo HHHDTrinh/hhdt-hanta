@@ -105,7 +105,7 @@ class navbarInner extends HTMLElement {
                             <a href="#">blog</a>
                             <ul class="subnav">
                                 <li><a href="../pages/blog.html">blog grid</a></li>
-                                <li><a href="">blog standard</a></li>
+                                <li><a href="../pages/error.html">blog standard</a></li>
                                 <li><a href="../pages/blogDetails.html">blog details</a></li>
                             </ul>
                         </li>
@@ -202,7 +202,7 @@ class navbarInner extends HTMLElement {
                                 <a href="#">blog</a>
                                 <ul class="subnav">
                                     <li><a href="../pages/blog.html">blog grid</a></li>
-                                    <li><a href="">blog standard</a></li>
+                                    <li><a href="../pages/error.html">blog standard</a></li>
                                     <li><a href="../pages/blogDetails.html">blog details</a></li>
                                 </ul>
                             </li>
