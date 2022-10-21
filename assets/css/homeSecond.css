@@ -79,7 +79,7 @@ header .content__inner{
 }
 
 .content__inner .content__text h1{
-    font-size: clamp(6.4rem, 5.5vw, 13rem);
+    font-size: clamp(6.4rem, 5.5vw, 13rem) !important;
     line-height: 135px;
     font-family: 'open-sans-condensed';
     font-weight: 300;
@@ -1245,9 +1245,8 @@ slider-logos .foot-logos .slide img:hover{
     header .header-bc{
         padding: 100px 0;
     }
-    
+
     .content__inner .content__text h1{
-        font-size: 60px;
         line-height: 70px;
         margin-bottom: 15px;
     }
@@ -1333,6 +1332,15 @@ slider-logos .foot-logos .slide img:hover{
 
     header .content__inner{
         margin-left: 35px;
+    }
+
+    .content__inner .content__text{
+        width: 100%;
+        padding-right: 5rem;
+    }
+
+    .content__inner .content__btns{
+        margin-right: 5px;
     }
 
     .core-content{

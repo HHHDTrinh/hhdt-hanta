@@ -1,9 +1,3 @@
-/* AoS */
-[data-aos][data-aos][data-aos-duration="400"], body[data-aos-duration="400"] [data-aos] {
-  transition-duration: .3s !important;
-}
-
-
 :root{
     --white-color: #FFFFFF;
     --black-color: #131313;

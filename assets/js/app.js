@@ -1,12 +1,9 @@
 var mybutton = document.getElementById("topBtn");
 
-
-
 // Inner Logos
-class sliderLogos extends HTMLElement{
-  connectedCallback(){
-    this.innerHTML =
-    `
+class sliderLogos extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
     <div class="slider-logo">
       <div class="logo-container">
           <section class="foot-logos slider">
@@ -49,15 +46,14 @@ class sliderLogos extends HTMLElement{
           </section>
       </div>
     </div>
-    `
+    `;
   }
 }
-customElements.define('slider-logos', sliderLogos);
+customElements.define("slider-logos", sliderLogos);
 
-class navbarInner extends HTMLElement{
-  connectedCallback(){
-    this.innerHTML =
-    `
+class navbarInner extends HTMLElement {
+  connectedCallback() {
+    this.innerHTML = `
     <nav id="navbar">
             <div class="large__container nav__container">
                 <div class="nav__left">
@@ -270,7 +266,7 @@ class navbarInner extends HTMLElement{
                             <div class="menu-outer">
                                 <ul class="primary-menu">
                                     <li class="primary-menu-item menu-item-has-children">
-                                        <a href="../index.html">home</a>
+                                        <a>home</a>
                                         <ul class="sub-menu sub-menu-js">
                                             <li>
                                                 <a href="../index.html">Home Page 01</a>
@@ -297,7 +293,7 @@ class navbarInner extends HTMLElement{
                                         </div>
                                     </li>
                                     <li class="primary-menu-item menu-item-has-children">
-                                        <a href="#">pages</a>
+                                        <a>pages</a>
                                         <ul class="sub-menu sub-menu-js">
                                             <li>
                                                 <a href="../pages/about.html">about us</a>
@@ -320,7 +316,7 @@ class navbarInner extends HTMLElement{
                                         </div>
                                     </li>
                                     <li class="primary-menu-item menu-item-has-children">
-                                        <a href="#">shop</a>
+                                        <a>shop</a>
                                         <ul class="sub-menu sub-menu-js">
                                             <li>
                                                 <a href="../pages/shop4c.html">shop four column</a>
@@ -337,7 +333,7 @@ class navbarInner extends HTMLElement{
                                         </div>
                                     </li>
                                     <li class="primary-menu-item menu-item-has-children menu-item-has-children-js">
-                                        <a href="#">blog</a>
+                                        <a>blog</a>
                                         <ul class="sub-menu sub-menu-js">
                                             <li>
                                                 <a href="../pages/blog.html">blog grid</a>
@@ -374,93 +370,93 @@ class navbarInner extends HTMLElement{
                 </nav>
             </div>
         </nav>
-        `
+        `;
   }
 }
-customElements.define('navbar-inners', navbarInner);
+customElements.define("navbar-inners", navbarInner);
 
 // Re-use
-$(function(){
-    $("#preloader").load("preloader.html");
+$(function () {
+  $("#preloader").load("preloader.html");
 });
 
-$(function(){
+$(function () {
   $("#footer").load("footer.html");
 });
 
-$(function(){
+$(function () {
   $("#menu").load("mobileMenu.html");
 });
 
 // Preloader fadeout
-$(window).on('load', function(){
+$(window).on("load", function () {
   setTimeout(removeLoader, 1500);
 });
-function removeLoader(){
+function removeLoader() {
   $("#preloader").fadeOut(500);
   // $(window).scrollTop(0);
   $(".preloader").fadeOut(500);
 }
 
 // Slider Header Background
-var headerChange = document.querySelector('.header-bc');
+var headerChange = document.querySelector(".header-bc");
 
 var i = 0;
 var images = [];
-images[0] = 'https://smartdemowp.com/hanta/wp-content/uploads/2020/10/banner-1.png';
-images[1] = 'https://smartdemowp.com/hanta/wp-content/uploads/2020/10/banner-3.png';
+images[0] =
+  "https://smartdemowp.com/hanta/wp-content/uploads/2020/10/banner-1.png";
+images[1] =
+  "https://smartdemowp.com/hanta/wp-content/uploads/2020/10/banner-3.png";
 
-function prevBc(){
+function prevBc() {
   if (i <= 0) i = images.length;
   i--;
   return changeBc();
 }
 
-function nextBc(){
-  if(i >= images.length-1) i=-1;
+function nextBc() {
+  if (i >= images.length - 1) i = -1;
   i++;
   return changeBc();
 }
 
-function changeBc(){
+function changeBc() {
   headerChange.style.backgroundImage = "url(" + images[i] + ")";
 }
 
-
 // Scroll down fade nav & btn
-window.addEventListener('scroll', function(){
+window.addEventListener("scroll", function () {
   document.getElementById("second__nav").style.top = "0px";
   if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-      document.getElementById("second__nav").style.background = "#cb9744";
-      document.getElementById("second__nav").style.opacity = "1";
+    document.getElementById("second__nav").style.background = "#cb9744";
+    document.getElementById("second__nav").style.opacity = "1";
 
-      // Btn
-      mybutton.style.top = "85%";
+    // Btn
+    mybutton.style.top = "85%";
   } else {
-        document.getElementById("second__nav").style.top = "-100%";
-        document.getElementById("second__nav").style.background = "transparent";
-        document.getElementById("second__nav").style.opacity = "0.6";
+    document.getElementById("second__nav").style.top = "-100%";
+    document.getElementById("second__nav").style.background = "transparent";
+    document.getElementById("second__nav").style.opacity = "0.6";
 
-        // Btn
-        mybutton.style.top = "-100%";
+    // Btn
+    mybutton.style.top = "-100%";
   }
-})
+});
 
 // Back to top
-mybutton.addEventListener('click', function(event){
+mybutton.addEventListener("click", function (event) {
   event.preventDefault();
   $("html, body").animate({ scrollTop: 0 }, "smooth");
   return false;
-})
-
+});
 
 // Count number
-const counters = document.querySelectorAll('.count');
+const counters = document.querySelectorAll(".count");
 const speed = 600;
 
 counters.forEach((counter) => {
   const updateCount = () => {
-    const target = parseInt(counter.getAttribute('data-target'));
+    const target = parseInt(counter.getAttribute("data-target"));
     const count = parseInt(counter.innerText);
     const increment = Math.trunc(target / speed);
 
@@ -475,89 +471,98 @@ counters.forEach((counter) => {
 });
 
 // Logo slider
-$(document).ready(function(){
-  $('.foot-logos').slick({
-      slidesToShow: 6,
-      slidesToScroll: 6,
-      autoplay: true,
-      autoplaySpeed: 3000,
-      arrows: false,
-      dots: false,
-      pauseOnHover: false,
-      responsive: [{
-          breakpoint: 1023,
-          settings: {
-              slidesToShow: 3
-          }
-      }, {
-          breakpoint: 739,
-          settings: {
-              slidesToShow: 1
-          }
-      }]
+$(document).ready(function () {
+  $(".foot-logos").slick({
+    slidesToShow: 6,
+    slidesToScroll: 6,
+    autoplay: true,
+    autoplaySpeed: 3000,
+    arrows: false,
+    dots: false,
+    pauseOnHover: false,
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
+          slidesToShow: 3,
+        },
+      },
+      {
+        breakpoint: 739,
+        settings: {
+          slidesToShow: 1,
+        },
+      },
+    ],
   });
 });
 
 // Multiple Items
-$(document).ready(function(){
-    $('.multiple-items').slick({
-      infinite: true,
-      loop: false,
-      slidesToShow: 2,
-      slidesToScroll: 2,
-      speed: 5000,
-      autoplay: true,
-      prevArrow: $('.think-btn--prev'),
-      nextArrow: $('.think-btn--next'),
-      pauseOnHover: false,
-      dots: true,
-      responsive: [{
+$(document).ready(function () {
+  $(".multiple-items").slick({
+    infinite: true,
+    loop: false,
+    slidesToShow: 2,
+    slidesToScroll: 2,
+    speed: 5000,
+    autoplay: true,
+    prevArrow: $(".think-btn--prev"),
+    nextArrow: $(".think-btn--next"),
+    pauseOnHover: false,
+    dots: true,
+    responsive: [
+      {
         breakpoint: 1023,
         settings: {
-            slidesToShow: 2,
-            slidesToScroll: 2
-        }
-    }, {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
         breakpoint: 739,
         settings: {
-            slidesToShow: 1,
-            slidesToScroll: 1,
-            dots: false
-        }
-    }]
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: false,
+        },
+      },
+    ],
   });
 });
 
 // Single Items
-$(document).ready(function(){
-  $('.single-items').slick({
+$(document).ready(function () {
+  $(".single-items").slick({
     infinite: true,
     loop: false,
     slidesToShow: 1,
     slidesToScroll: 1,
     speed: 5000,
     autoplay: true,
-    prevArrow: $('.think-btn--prev'),
-    nextArrow: $('.think-btn--next'),
+    prevArrow: $(".think-btn--prev"),
+    nextArrow: $(".think-btn--next"),
     pauseOnHover: false,
     dots: true,
-    responsive: [{
-      breakpoint: 1023,
-      settings: {
-          slidesToShow: 1
-      }
-  }, {
-      breakpoint: 739,
-      settings: {
+    responsive: [
+      {
+        breakpoint: 1023,
+        settings: {
           slidesToShow: 1,
-          dots: false
-      }
-  }]
+        },
+      },
+      {
+        breakpoint: 739,
+        settings: {
+          slidesToShow: 1,
+          dots: false,
+        },
+      },
+    ],
   });
 });
 
 // Tabs UI About Home Second
-function TabsAbout(){
+function TabsAbout() {
   const $ = document.querySelector.bind(document);
   const $$ = document.querySelectorAll.bind(document);
 
@@ -577,10 +582,9 @@ function TabsAbout(){
       pane.classList.add("active");
     };
   });
-};
+}
 
 TabsAbout();
-
 
 // menuModal - Honey & Sweets Pages
 // function menuModal(){
@@ -594,52 +598,51 @@ TabsAbout();
 //     Show.classList.remove('open')
 //   }
 
-
 //   Show.addEventListener('click', OpenModal)
 // }
 
 // menuModal();
 
 // MenuMobile
-function MenuMobile(){
-  const menuMobile = document.querySelector('.mobile-menu-js');
-  const hambuger = document.querySelector('.nav__link-mobile-js');
-  const closeBtn = document.querySelector('.close-btn-js');
-  const menuMobileContainer = document.querySelector('.menu-backdrop-js');
+function MenuMobile() {
+  const menuMobile = document.querySelector(".mobile-menu-js");
+  const hambuger = document.querySelector(".nav__link-mobile-js");
+  const closeBtn = document.querySelector(".close-btn-js");
+  const menuMobileContainer = document.querySelector(".menu-backdrop-js");
 
-  function showModal(){
-    menuMobile.classList.add('open');
+  function showModal() {
+    menuMobile.classList.add("open");
   }
 
-  function closeModal(){
-    menuMobile.classList.remove('open');
+  function closeModal() {
+    menuMobile.classList.remove("open");
   }
 
-  hambuger.addEventListener('click', showModal);
-  
+  hambuger.addEventListener("click", showModal);
 
-  closeBtn.addEventListener('click', closeModal);
-  menuMobileContainer.addEventListener('click', closeModal);
+  closeBtn.addEventListener("click", closeModal);
+  menuMobileContainer.addEventListener("click", closeModal);
 }
 
 MenuMobile();
 
 // Submenu mobile
-function subMobile(){
-    var  dropBtns = document.querySelectorAll('.dropdown-btn-js');
-    dropBtns.forEach(item =>{
-        item.addEventListener('click', function(){
-            item.classList.toggle('open');
-        })
-    })
+function subMobile() {
+  var dropBtns = document.querySelectorAll(".dropdown-btn-js");
+  var menuItems = document.querySelectorAll(".primary-menu-item");
+  dropBtns.forEach((item) => {
+    item.addEventListener("click", function () {
+      item.classList.toggle("open");
+    });
+  });
 }
 
 subMobile();
 
-$(document).ready(function(){
-    $('.dropdown-btn-js').on("click", function(e){
-      $(this).prev('ul').toggle('open');
-      e.stopPropagation();
-      e.preventDefault();
-    });
+$(document).ready(function () {
+  $(".dropdown-btn-js").on("click", function (e) {
+    $(this).prev("ul").toggle("open");
+    e.stopPropagation();
+    e.preventDefault();
+  });
 });
