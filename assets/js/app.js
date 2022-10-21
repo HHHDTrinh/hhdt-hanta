@@ -67,7 +67,7 @@ class navbarInner extends HTMLElement {
                 <div class="nav__center">
                     <ul class="nav__link">
                         <li>
-                            <a href="../index.html">home</a>
+                            <a href="#">home</a>
                             <ul class="subnav">
                                 <li><a href="../index.html">home page 01</a></li>
                                 <li><a href="../pages/homeSecond.html">home page 02</a></li>
@@ -164,7 +164,7 @@ class navbarInner extends HTMLElement {
                     <div class="nav__center">
                         <ul class="nav__link">
                             <li>
-                                <a href="../index.html">home</a>
+                                <a href="#">home</a>
                                 <ul class="subnav">
                                     <li><a href="../index.html">home page 01</a></li>
                                     <li><a href="../pages/homeSecond.html">home page 02</a></li>
